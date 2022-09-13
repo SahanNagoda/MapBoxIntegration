@@ -13,9 +13,11 @@
 		7A09B31528D08FA8008EF035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A09B31328D08FA8008EF035 /* Main.storyboard */; };
 		7A09B31728D08FAA008EF035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A09B31628D08FAA008EF035 /* Assets.xcassets */; };
 		7A09B31A28D08FAA008EF035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A09B31828D08FAA008EF035 /* LaunchScreen.storyboard */; };
+		C1C36D4AB36A271CDD0C1E87 /* Pods_MapBoxIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC753C66F191EE8C3BD6E5FB /* Pods_MapBoxIntegration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B02294AA5929616575D1161 /* Pods-MapBoxIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapBoxIntegration.release.xcconfig"; path = "Target Support Files/Pods-MapBoxIntegration/Pods-MapBoxIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		7A09B30A28D08FA8008EF035 /* MapBoxIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A09B30D28D08FA8008EF035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A09B30F28D08FA8008EF035 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		7A09B31628D08FAA008EF035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A09B31928D08FAA008EF035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A09B31B28D08FAA008EF035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC753C66F191EE8C3BD6E5FB /* Pods_MapBoxIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapBoxIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E08AD00F038F350151019A /* Pods-MapBoxIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapBoxIntegration.debug.xcconfig"; path = "Target Support Files/Pods-MapBoxIntegration/Pods-MapBoxIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C36D4AB36A271CDD0C1E87 /* Pods_MapBoxIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		714E17E129408B8A96376682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC753C66F191EE8C3BD6E5FB /* Pods_MapBoxIntegration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A09B30128D08FA8008EF035 = {
 			isa = PBXGroup;
 			children = (
 				7A09B30C28D08FA8008EF035 /* MapBoxIntegration */,
 				7A09B30B28D08FA8008EF035 /* Products */,
+				915D9945154998F9B728B5B1 /* Pods */,
+				714E17E129408B8A96376682 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = MapBoxIntegration;
 			sourceTree = "<group>";
 		};
+		915D9945154998F9B728B5B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2E08AD00F038F350151019A /* Pods-MapBoxIntegration.debug.xcconfig */,
+				5B02294AA5929616575D1161 /* Pods-MapBoxIntegration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A09B31E28D08FAA008EF035 /* Build configuration list for PBXNativeTarget "MapBoxIntegration" */;
 			buildPhases = (
+				680A99209CBDA1C405C5C071 /* [CP] Check Pods Manifest.lock */,
 				7A09B30628D08FA8008EF035 /* Sources */,
 				7A09B30728D08FA8008EF035 /* Frameworks */,
 				7A09B30828D08FA8008EF035 /* Resources */,
+				7AFCAD84B40525EC3CE354DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		680A99209CBDA1C405C5C071 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapBoxIntegration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFCAD84B40525EC3CE354DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapBoxIntegration/Pods-MapBoxIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapBoxIntegration/Pods-MapBoxIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapBoxIntegration/Pods-MapBoxIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A09B30628D08FA8008EF035 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		7A09B31F28D08FAA008EF035 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E08AD00F038F350151019A /* Pods-MapBoxIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +359,7 @@
 				DEVELOPMENT_TEAM = Z2D3W88VKU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapBoxIntegration/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to Located user";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,6 +380,7 @@
 		};
 		7A09B32028D08FAA008EF035 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B02294AA5929616575D1161 /* Pods-MapBoxIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +389,7 @@
 				DEVELOPMENT_TEAM = Z2D3W88VKU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapBoxIntegration/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to Located user";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
