@@ -31,6 +31,8 @@ class ViewController: UIViewController {
                 guard let self = self else { return }
                 // Pass the first generated route to the the NavigationViewController
                 let viewController = NavigationViewController(for: response, routeIndex: 0, routeOptions: routeOptions)
+                viewController.navigationMapView?.mapView.ornaments.options.logo.visibility = .hidden
+                viewController.navigationMapView?.mapView.ornaments.options.attributionButton.visibility = .hidden
                 viewController.modalPresentationStyle = .fullScreen
                 self.present(viewController, animated: true, completion: nil)
             }
